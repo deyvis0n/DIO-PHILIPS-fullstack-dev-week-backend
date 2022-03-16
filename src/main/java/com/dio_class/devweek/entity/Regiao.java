@@ -13,15 +13,15 @@ public class Regiao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
-    @Setter
+    @Setter @Column(name = "regiao")
     private Long regiaoAvaliada;
-    @Setter
-    private Long quantidadeDeExames;
+    @Setter @Column(name = "total_exames")
+    private Long totalDeExames;
 
     public Regiao(Long regiaoAvaliada, Long quantidadeDeExames) {
         this.regiaoAvaliada = regiaoAvaliada;
-        this.quantidadeDeExames = quantidadeDeExames;
+        this.totalDeExames = quantidadeDeExames;
     }
 }
