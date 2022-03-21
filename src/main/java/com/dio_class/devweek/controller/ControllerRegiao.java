@@ -19,7 +19,7 @@ public class ControllerRegiao {
         this.reRepository = repository;
     }
 
-    @GetMapping("/regiao")
+    @GetMapping("/regioes")
     public List<Regiao> getRegiao() {
         return reRepository.findAll();
     }

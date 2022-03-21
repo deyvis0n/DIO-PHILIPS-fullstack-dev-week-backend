@@ -16,11 +16,11 @@ public class Regiao {
     @Column(name = "id", nullable = false)
     private Long id;
     @Setter @Column(name = "regiao")
-    private Long regiaoAvaliada;
+    private String regiaoAvaliada;
     @Setter @Column(name = "total_exames")
     private Long totalDeExames;
 
-    public Regiao(Long regiaoAvaliada, Long quantidadeDeExames) {
+    public Regiao(String regiaoAvaliada, Long quantidadeDeExames) {
         this.regiaoAvaliada = regiaoAvaliada;
         this.totalDeExames = quantidadeDeExames;
     }
